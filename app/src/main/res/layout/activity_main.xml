@@ -1,0 +1,79 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/img">
+
+    <ImageView
+        android:id="@+id/logo_barberia"
+        android:layout_width="177dp"
+        android:layout_height="152dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Logo de la barbería"
+        android:src="@mipmap/ic_launcher" />
+
+    <EditText
+        android:id="@+id/et_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_persona"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:paddingEnd="12dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080" />
+
+    <EditText
+        android:id="@+id/et_contrasena"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080" />
+
+    <Button
+        android:id="@+id/btn_acceder"
+        android:layout_width="385dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#121212"
+        android:padding="15dp"
+        android:text="Acceder"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <!-- Botón Registro -->
+    <Button
+        android:id="@+id/btn_registro"
+        android:layout_width="385dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#121212"
+        android:padding="15dp"
+        android:text="Registrarse"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+</LinearLayout>
