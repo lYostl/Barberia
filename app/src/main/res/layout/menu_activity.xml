@@ -50,7 +50,7 @@
             <!-- Botón Mis Citas -->
             <Button
                 android:id="@+id/btn_ver_reservas"
-                android:layout_width="318dp"
+                android:layout_width="307dp"
                 android:layout_height="61dp"
                 android:layout_marginBottom="24dp"
                 android:backgroundTint="#6F2929"
@@ -63,7 +63,7 @@
             <!-- Botón Cerrar Sesión -->
             <Button
                 android:id="@+id/btn_cerrar_sesion"
-                android:layout_width="329dp"
+                android:layout_width="308dp"
                 android:layout_height="63dp"
                 android:layout_marginBottom="24dp"
                 android:backgroundTint="#6F2929"

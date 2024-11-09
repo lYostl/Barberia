@@ -8,7 +8,6 @@
     android:padding="16dp"
     android:background="@drawable/img">
 
-
     <TextView
         android:id="@+id/tv_titulo_formulario"
         android:layout_width="wrap_content"
@@ -20,7 +19,6 @@
         android:textColor="#FFFFFF"
         android:layout_marginBottom="40dp" />
 
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,10 +29,26 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="252dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
 
+            <EditText
+                android:id="@+id/et_nombre_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_persona"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Usuario"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:paddingEnd="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#808080"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/btn_seleccionar_fecha"
@@ -47,7 +61,6 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-
             <TextView
                 android:id="@+id/tv_fecha_seleccionada"
                 android:layout_width="wrap_content"
@@ -57,7 +70,6 @@
                 android:text="Fecha: No seleccionada"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp" />
-
 
             <Button
                 android:id="@+id/btn_seleccionar_hora"
@@ -69,7 +81,6 @@
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
 
             <TextView
                 android:id="@+id/tv_hora_seleccionada"
@@ -83,7 +94,6 @@
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-
 
     <Button
         android:id="@+id/btn_agendar"

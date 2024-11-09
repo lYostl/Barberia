@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var passwordInput: EditText
     lateinit var loginBtn: Button
     lateinit var instagramBtn: ImageView
+    lateinit var registroBtn: Button
     private lateinit var dbHelper: BarberiaDbActivity
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         passwordInput = findViewById(R.id.et_contrasena)
         loginBtn = findViewById(R.id.btn_acceder)
         instagramBtn = findViewById(R.id.iv_instagram)
+        registroBtn = findViewById(R.id.btn_registro)
         dbHelper = BarberiaDbActivity(this)
 
         loginBtn.setOnClickListener {
@@ -44,6 +46,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
+
+        registroBtn.setOnClickListener {
+            val intent = Intent(this, RegistroActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun iniciarSesion(usuario: String, contrasena: String) {
@@ -60,6 +67,7 @@ class MainActivity : AppCompatActivity() {
             cursor.close()
             return
         }
+        cursor.close()
 
         // Verificar si es un usuario registrado
         cursor = db.rawQuery(
