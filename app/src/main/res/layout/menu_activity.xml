@@ -7,7 +7,6 @@
     android:padding="16dp"
     android:background="@drawable/img">
 
-    <!-- Título MENÚ (fuera de la CardView) -->
     <TextView
         android:id="@+id/tv_menu"
         android:layout_width="wrap_content"
@@ -35,7 +34,7 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <!-- Texto Bienvenida -->
+
             <TextView
                 android:id="@+id/tv_bienvenido"
                 android:layout_width="wrap_content"
@@ -47,7 +46,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <!-- Botón Mis Citas -->
+
             <Button
                 android:id="@+id/btn_ver_reservas"
                 android:layout_width="307dp"
@@ -60,7 +59,7 @@
                 android:textColor="#FFFFFF"
                 android:textStyle="bold" />
 
-            <!-- Botón Cerrar Sesión -->
+
             <Button
                 android:id="@+id/btn_cerrar_sesion"
                 android:layout_width="308dp"

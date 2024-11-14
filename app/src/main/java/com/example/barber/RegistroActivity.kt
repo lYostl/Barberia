@@ -43,7 +43,7 @@ class RegistroActivity : AppCompatActivity() {
         volverLoginBtn.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            finish() // Finaliza la actividad actual para evitar volver con el botón 'atrás'
+            finish()
         }
     }
 
@@ -54,7 +54,7 @@ class RegistroActivity : AppCompatActivity() {
         try {
             db.execSQL(insertQuery, arrayOf(usuario, correo, contrasena))
             Toast.makeText(this, "SE HA REGISTRADO EXITOSAMENTE", Toast.LENGTH_SHORT).show()
-            finish() // Regresar al login automáticamente después del registro exitoso
+            finish()
         } catch (e: Exception) {
             Toast.makeText(this, "Error: ${e.message}", Toast.LENGTH_SHORT).show()
         }
